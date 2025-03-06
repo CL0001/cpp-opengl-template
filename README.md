@@ -1,5 +1,7 @@
 # C++ OpenGL Template
-This is a starter template for anyone who wants to start learning OpenGL with C++. It provides a minimal and simple setup, so you can quickly dive into coding without the hassle of complex configurations.
+This is a starter template for anyone looking to learn OpenGL with C++. It provides a minimal and straightforward setup, allowing you to start coding quickly without dealing with complex configurations.
+
+If you need guidance or want comprehensive documentation, visit: https://docs.gl/
 
 
 ## Getting Started
@@ -11,9 +13,10 @@ Or, download the ZIP file and extract it.
 
 
 ## Requirements
-* A C++ compiler (like MSVC, GCC, Clang)
-* CMake
-* GLFW (this template includes it)
+* A C++ compiler (like **MSVC, GCC, Clang**)
+* **CMake** - CMake is a build system generator that simplifies the process of managing and building projects across different platforms.
+* **GLAD** (included in this template, or download the latest version from https://glad.dav1d.de/) - GLAD is an OpenGL loader that helps load and manage OpenGL function pointers.
+* **GLFW** (included in this template, or download the latest version from https://www.glfw.org/) - GLFW is a library for creating windows, handling input, and managing OpenGL contexts.
 
 
 ## Building and Running
