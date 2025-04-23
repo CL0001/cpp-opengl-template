@@ -1,43 +1,31 @@
 # C++ OpenGL Template
-This is a starter template for anyone looking to learn OpenGL with C++. It provides a minimal and straightforward setup, allowing you to start coding quickly without dealing with complex configurations.
+This is a starter template for anyone learning OpenGL with C++, designed to eliminate the hassle of setting up dependencies manually.
 
-If you need guidance or want comprehensive documentation, visit: https://docs.gl/
-
-
-## Getting Started
-To get started, clone this repository:
-```
-git clone https://github.com/CL0001/cpp-opengl-template.git
-```
-Or, download the ZIP file and extract it.
+If you're looking for detailed documentation to support your OpenGL learning journey, check out: https://docs.gl
 
 
 ## Requirements
-* A C++ compiler (like **MSVC, GCC, Clang**)
-* **CMake** - CMake is a build system generator that simplifies the process of managing and building projects across different platforms.
-* **GLAD** (included in this template, or download the latest version from https://glad.dav1d.de/) - GLAD is an OpenGL loader that helps load and manage OpenGL function pointers.
-* **GLFW** (included in this template, or download the latest version from https://www.glfw.org/) - GLFW is a library for creating windows, handling input, and managing OpenGL contexts.
+* **C++ compiler** (like MSVC, GCC, Clang)
+* **CMake** - CMake is a build system generator that simplifies the process of managing and building projects.
 
 
 ## Building and Running
-This template includes simple test code to ensure everything is working. You can use this as a basis to try the building and running process.
+This template includes simple test code to verify that everything is set up correctly. Use it as a starting point to build and run the project.
 
-Navigate to the build directory:
+1. Create a build directory and navigate into it:
 ```
+mkdir build
 cd build
 ```
-
-Generate the project files using CMake:
+2. Generate project files with CMake:
 ```
 cmake ..
 ```
-
-Build the project:
+3. Build the project:
 ```
 cmake --build .
 ```
-
-Run the application:
+4. Run the application (on Windows):
 ```
-./debug/OpenGLProject.exe
+./Debug/OpenGL.exe
 ```
