@@ -7,16 +7,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(GLAD_SOURCES "dependencies/lib/glad.c")
 
-file(GLOB_RECURSE SOURCES ${CMAKE_SOURCE_DIR}/src/*.cpp)
+file(GLOB_RECURSE HEADERS "${CMAKE_SOURCE_DIR}/include/*.h")
+file(GLOB_RECURSE SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 
-add_executable(${PROJECT_NAME} ${SOURCES} ${GLAD_SOURCES})
+add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} ${GLAD_SOURCES})
 
 target_include_directories(${PROJECT_NAME} PUBLIC 
-    "${CMAKE_SOURCE_DIR}/dependencies/include"
     "${CMAKE_SOURCE_DIR}/include"
+    "${CMAKE_SOURCE_DIR}/dependencies/include"
 )
 
-target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/dependencies/lib/glfw3.lib)
+target_link_libraries(${PROJECT_NAME} PRIVATE "${CMAKE_SOURCE_DIR}/dependencies/lib/glfw3.lib")
 
 if (WIN32)
     target_link_libraries(${PROJECT_NAME} PRIVATE opengl32)
