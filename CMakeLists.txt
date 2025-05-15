@@ -17,6 +17,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC
     "${CMAKE_SOURCE_DIR}/dependencies/include"
 )
 
+target_compile_definitions(${PROJECT_NAME} PRIVATE RESOURCES_PATH="${CMAKE_SOURCE_DIR}/resources/")
+
 target_link_libraries(${PROJECT_NAME} PRIVATE "${CMAKE_SOURCE_DIR}/dependencies/lib/glfw3.lib")
 
 if (WIN32)
