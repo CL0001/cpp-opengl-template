@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(GLAD_SOURCES "dependencies/lib/glad.c")
 
 file(GLOB_RECURSE HEADERS "${CMAKE_SOURCE_DIR}/include/*.h")
-file(GLOB_RECURSE SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
+file(GLOB_RECURSE SOURCES "${CMAKE_SOURCE_DIR}/source/*.cpp")
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} ${GLAD_SOURCES})
 
