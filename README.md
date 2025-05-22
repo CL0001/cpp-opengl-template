@@ -25,7 +25,12 @@ cmake ..
 ```
 cmake --build .
 ```
-4. Run the application (on Windows):
+4. Run the application:
 ```
 ./Debug/OpenGL.exe
 ```
+
+## Sample Result
+If the build succeeds, you should see an orange triangle like this:
+
+![image](https://github.com/user-attachments/assets/63c477c9-89e5-4fab-9f3d-225adedcbb7b)
